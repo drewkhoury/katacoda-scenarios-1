@@ -12,7 +12,7 @@ As you can see, there's not not much here yet. Our first task is to write our fi
 
 Write your first test to define what you'd like to happen, this is what you expect to happen once the code has been written.
 
-For our first test we're going to create a `StudentTest` class and create a test that asserts `studentName` is equal to the concatination of the student's first and last name when we call our Student function (note there's no code in our studnet function so we expect this test will fail).
+For our first test we're going to create a `StudentTest` class and create a test that asserts `studentName` is equal to the concatination of the student's first and last name when we call our Student function (note there's no code in our student function so we expect this test will fail).
 
 Copy the following into the editor by hitting 'copy to editor':
 
