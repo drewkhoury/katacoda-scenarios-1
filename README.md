@@ -71,6 +71,7 @@ Useful dashboard links to verify that deployments were successful:
 
 - https://dashboard.katacoda.com/content/
 - https://dashboard.katacoda.com/content/testruns/
+- https://dashboard.katacoda.com/content/debug/
   
 It can take 1 minute, or 20 minutes for deployed courses to show up on your profile.
   
