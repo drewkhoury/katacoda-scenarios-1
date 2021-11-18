@@ -22,6 +22,24 @@ View the [Katacoda documentation](https://www.katacoda.com/docs) for information
 
 ## Tips
 
+### Katacoda proflies
+
+Make sure you create a profile that's dedicated to the fork of the contino repo, this way it will have it's own deployment and testing lifecycle.
+
+If you'd like to test out katacoda lessons that aren't contino based, having a different katacoda profile and repo will ensure the testing and deployment and repo merging is simple and avoid any confusion.
+
+You can use a variety of Google, Github and Email accounts for this. eg:
+
+**Drew's Contino based:** KataCoda Profile: https://www.katacoda.com/drewkhoury-contino
+
+- Login: Google Account Andrew.khoury@contino.io 
+- Repo: https://github.com/drewkhoury/katacoda-scenarios-1 (fork of: https://github.com/contino/katacoda-scenarios)
+
+**Drew's Sandbox/Personal:** KataCoda Profile: https://www.katacoda.com/drewkhoury
+- Login: GitHub drew.khoury@gmail.com (or I could have used Google Account drew.khoury@gmail.com)
+- Repo: https://github.com/drewkhoury/katacoda-drewkhoury
+
+
 ### Basic Katacoda Syntax in markdown
 
 #### Open a file
