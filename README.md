@@ -77,6 +77,16 @@ It can take 1 minute, or 20 minutes for deployed courses to show up on your prof
   
 You can inspect the page and look for "gitCommit" to verify what deployment you're seeing, eg: `<meta name="gitCommit" content="2ef3f7244365837307f9003875e0746f9cd3e825">`
 
+### Viewing your own lesson / debug
+
+When viewing your own lesson you can access debug from the "SCENARIO AUTHORING INFORMATION" link at the top of the page.
+
+e.g: if your background script is downloading software through apt it might look like this:
+
+```
+Warning: Permanently added 'host01,172.17.0.12' (ECDSA) to the list of known hosts. WARNING: apt does not have a stable CLI interface. Use with caution in scripts. Reading package lists... Building dependency tree... Reading state information... The following packages were automatically installed and are no longer required: libc-ares2 libnetplan0 nodejs-doc python3-netifaces Use 'apt autoremove' to remove them. The following additional packages will be installed: ant ant-optional antlr bnd groovy ivy java-wrappers junit4 libantlr-java �� libasm-java libbcel-java libbcpg-java libbcprov-java libbindex-java libbsf-java libbsh-java libcommons-codec-java libcommons-collections3-java � libcommons-compress-java libcommons-lang-java libcommons-logging-java lib
+```
+
 ### Displaying a Progress Spinner / Wait Script
 
 Example from katacoda: [scenario-examples/displaying-progress-spinner](https://github.com/katacoda/scenario-examples/tree/main/displaying-progress-spinner)
