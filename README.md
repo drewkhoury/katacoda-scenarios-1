@@ -16,6 +16,8 @@ For each scenario, please do the following:
 
 See [contributions.md](contributions.md) for more details, and tips when authoring katacoda lessons.
 
+Be part of the Katacoda slack community at Contino [#practice-katacoda](https://contino.slack.com/archives/C014PLJFBS7).
+
 ## Approvers
 
 - Marcus Maxwell - @mindfulmonk
