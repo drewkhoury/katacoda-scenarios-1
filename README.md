@@ -19,7 +19,7 @@ For each scenario, please do the following:
 ## Approvers
 
 - Marcus Maxwell - @mindfulmonk
-- Jaroslav Pantsjoha - @joshuatalb
+- Jaroslav Pantsjoha - @jpantsjoha
 - Andres Guisado - @andresguisado (contino alumni) 
 - Andrew Khoury - @drewkhoury
 - Craig Kilpatrick - @ckilpatrick20
