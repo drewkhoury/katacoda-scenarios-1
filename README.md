@@ -13,8 +13,22 @@ For each scenario, please do the following:
 1. Create a card on the respective [Trello board](https://trello.com/b/7SvNAROB/kubernetes-training)
 1. Work on the scenario, try it out in your own environment `https://www.katacoda.com/$GITHUBHANDLE`
 1. When you're satisfied, send in a pull request.
-1. Next, get two reviews/thumbs up from team members (@mindfulmonk, @joshuatalb and @andresguisado)
+1. Next, get two reviews/thumbs up from approvers
 1. Once your scenario has been reviewed, we will merge it and it will appear on https://katacoda.com/contino
+
+## Approvers
+
+- Marcus Maxwell - @mindfulmonk
+- Jaroslav Pantsjoha - @joshuatalb
+- Andres Guisado - @andresguisado (contino alumni) 
+- Andrew Khoury - @drewkhoury
+- Craig Kilpatrick - @ckilpatrick20
+
+**How to approve / what to look for:**
+
+Approvers should review the module as a second set of eyes to ensure it flows well (no issues when walking through the course).
+
+Approvers should also check that content is approriate for Contino branding, given these are public.
 
 ## Resources
 
