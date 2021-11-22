@@ -1,51 +1,45 @@
-## Time to refactor
 
-### StudentTest.java
-Open the file `src/test/java/StudentTest.java`{{open}}
+---
+## Student.java
 
-Begin by adding comments to identify each stage of the test.
+Now that we've written our failing test, we know what we need to do next. We need to write just enough code to make the test go <span style="color:green">green</span>.
 
-Copy file to editor:
-<pre class="file" data-filename="src/test/java/StudentTest.java" data-target="replace">
-import org.junit.jupiter.api.Test;
-import static org.junit.jupiter.api.Assertions.*;
+Start by opening the `src/main/java/Student.java`{{open}} file.
 
-public class StudentTest {
+### The Bare Minimum
 
-  @Test
-  public void givenStudentName_ThenReturnDisplayName() {
-    // arrange
-    Student student = new Student();
+Our goal is to write the minimum amount of code to get the test to go <span style="color:green">green</span>. We will refactor the code in future steps, so our main aim here is to just get something working.
 
-    // act
-    String studentName = student.displayStudentName("John", "Smith");
+Copy the method below into the `Student.java` file:
 
-    // assert
-    assertEquals("JohnSmith", studentName);
-  }
-}
-</pre>
-
-### Student.java
-Start by opening the file `src/main/java/Student.java`{{open}}
-
-Begin refactoring by adding class attributes and updating method to use them.
-
-Copy file to editor:
 <pre class="file" data-filename="src/main/java/Student.java" data-target="replace">
-public class Student {  
-  String firstName;
-  String lastName;
-  String displayName;  
-
-  public String displayStudentName(String firstName, String lastName) {
-    displayName = firstName + lastName;
-    return displayName;
+public class Student {
+  public String displayStudentFullName(String firstName, String lastName) {
+    return firstName + lastName;
   }
 }
 </pre>
 
-### Rerun our test from Step 1
-Now we will rerun our test from Step 1 to ensure we did not break our code.
+### Running our first test...again <span style="color:green">(GREEN STAGE)</span>
+
+Now that we have created our `displayStudentFullName` method and written just enough code to get the JUnit test to pass, it is time to run our test again. This time around, we should see our test go from <span style="color:red">red</span> to <span style="color:green">green</span>.
+
+Type the following command into the consule to run our first test again:
 
 `bash ./gradlew test`{{execute}}
+
+### Success!
+
+```gradle
+BUILD SUCCESSFUL in 2s
+3 actionable tasks: 3 executed
+```
+
+Our test is now passing. This gives us a safety net and the confidence to now be able to go back and begin refactoring the code in our `Student` and `StudentTest` classes.
+
+We have successfully completed the first two stages of TDD:
+
+1. Writting a unit test that is failing <span style="color:red">(red stage)</span>
+2. Writting just enough code to get our unit test passing <span style="color:green">(green stage)</span>
+
+We can now move onto the final stage of TDD, <span style="color:blue">refactoring</span>.

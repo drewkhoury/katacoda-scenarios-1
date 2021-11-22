@@ -1,31 +1,23 @@
-## Let's write our first bit of code
 
-Now that we've written our test, we know our goal. We need to write the code required to make it go green.
+---
+Congratulations! We've written our first test.
 
-Start by opening the file `src/main/java/Student.java`{{open}}.
+Let's complete the first stage of TDD by running our test. We are expecting this test to fail, or be <span style="color:red">red</span>.
 
-Ah our Student class doesn't have any code in it, this is why it was failing in the previous step. Never fear, we'll write just enough code to get it green.
+### Running our first test <span style="color:red">(RED STAGE)</span>
 
-## Let's write our first bit of code
-
-Our goal is to write the minimum code to pass the test, that's the "green" step. We'll refactor the code in future steps so our main aim here is to get something working.
-
-Copy the following into the editor by hitting 'copy to editor':
-
-<pre class="file" data-filename="src/main/java/Student.java" data-target="replace">
-public class Student {
-  public String displayStudentName(String firstName, String lastName) {
-    return firstName + lastName;
-  }
-}
-</pre>
-
-## Run your first test - again (Green)
-
-Let's now run test again, but this time we're expecting that this will be "red" or "pass" as we've written the code that will meet the requirements of the test.
-
-Click execute to run your test suite:
+Type the following command into the consule to run our first test:
 
 `bash ./gradlew test`{{execute}}
 
-Now it's time for the advanced stuff, refactoring!
+### Failure is an option
+```gradle
+BUILD FAILED in 12s
+2 actionable tasks: 2 executed
+```
+
+*This is an example error message. Do not worry if your error message looks a little different.*
+
+In fact, failure is our only option as this is exactly what we are expecting. The `student.displayStudentFullName` method does not exist yet which means this test should and will fail.
+
+Now we're ready for the next stage of TDD. We need to write just enough code in the `Student` class to make the test pass, or go <span style="color:green">green</span>.

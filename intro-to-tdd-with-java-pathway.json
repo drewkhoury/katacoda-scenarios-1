@@ -6,7 +6,7 @@
     {
       "course_id": "scenario-student-tracking-application",
       "title": "Creating a Student Tracking Application",
-      "description": "Using TDD, we will begin to create a student tracking application"
+      "description": "Using TDD, we will create a student tracking application"
     }
   ]
 }

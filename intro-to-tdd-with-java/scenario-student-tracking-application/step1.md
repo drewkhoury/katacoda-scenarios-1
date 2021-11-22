@@ -1,20 +1,41 @@
-Welcome to the start of your TDD journey. Please be patient as your enviorment loads, it usually takes less than a minute.
 
-## TDD Starts with a test file
+---
+## Project File Structure
 
-TDD starts with testing before any development.
+The project file structure is listed below. We will be working in `Student.java` and `StudentTest.java`. We will not need to edit any of the other files for this scenario.
 
-Open the file `src/test/java/StudentTest.java`{{open}}.
+```
+project
++-- gradle
+|
++-- src
+|   +-- main
+|       +-- java
+|           -- Student.java
+|   +-- test
+|       +-- java
+|           -- StudentTest.java
++-- build.gradle
++-- gradlew
++-- gradle.bat
++-- settings.gradle
+```
 
-As you can see, there's not not much here yet. Our first task is to write our first JUnit test.
+## StudentTest.java
+Let's start by opening up our `src/test/java/StudentTest.java`{{open}} file to begin writting our JUnit code.
 
-## Write your first test
+As we can see, there's not not much here yet except for a few import statements and an empty `StudentTest` class. Before we begin, we should look at our first requirement so we know what test we need to write first.
 
-Write your first test to define what you'd like to happen, this is what you expect to happen once the code has been written.
+**Requirement:**
+- Create a method that will concatenate a student's first and last name and return the new string
 
-For our first test we're going to create a `StudentTest` class and create a test that asserts `studentName` is equal to the concatination of the student's first and last name when we call our Student function (note there's no code in our student function so we expect this test will fail).
+### Writing our first test
 
-Copy the following into the editor by hitting 'copy to editor':
+For our first test, we're going to create a new test method called `givenStudentFirstLasName_ThenReturnFullName`. This test method will assert that `studentFullName` is equal to the concatination of the student's first and last name when we call our `student.displayStudentFullName` method 
+
+- **NOTE** There is no code in our `Student.java` file so we expect this test will fail
+
+Copy the test method below to the `StudentTest.java` file:
 
 <pre class="file" data-filename="src/test/java/StudentTest.java" data-target="replace">
 import org.junit.jupiter.api.Test;
@@ -22,20 +43,9 @@ import static org.junit.jupiter.api.Assertions.*;
 
 public class StudentTest {
   @Test
-  public void givenStudentName_ThenReturnDisplayName() {
-    Student student = new Student();
-    String studentName = student.displayStudentName("John", "Smith");
-    assertEquals("JohnSmith", studentName);
+  public void givenStudentFirstLasName_ThenReturnFullName() {
+    String studentFullName = new Student().displayStudentFullName("John", "Smith");
+    assertEquals("JohnSmith", studentFullName);
   }
 }
 </pre>
-
-## Run your first test (Red)
-
-Let's now run our test! We're expecting that this will be "red" or "fail" as we've only written the test (we'll make it pass in the next step).
-
-Click execute to run your first test:
-
-`bash ./gradlew test`{{execute}}
-
-Now you're ready for the part everyone loves, making things green! Click continue when you're ready.
