@@ -1,0 +1,12 @@
+{
+  "title": "Good Software Delivery",
+  "description": "Good Software Delivery",
+  "icon" : "fa-docker",
+  "courses": [
+    {
+      "course_id": "hello-world-golang",
+      "title": "Hello World (Golang)",
+      "description": "Hello World (Golang)"
+    }
+  ]
+}
